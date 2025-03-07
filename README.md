@@ -71,7 +71,6 @@ chmod +x .husky/commit-msg
   * Content :
 ```bash
 #!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
 
 MAX_LENGTH=72   # Set your limit
 
