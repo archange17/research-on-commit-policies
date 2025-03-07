@@ -1,0 +1,13 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"  # Charge Husky
+
+MAX_LENGTH=72
+
+MESSAGE=$(cat "$1")
+
+if [ ${#MESSAGE} -gt $MAX_LENGTH ]; then
+    echo "❌ Erreur : Le message de commit dépasse les $MAX_LENGTH caractères autorisés."
+    exit 1
+fi
+
+exit 0
