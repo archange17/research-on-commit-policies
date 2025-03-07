@@ -85,4 +85,9 @@ fi
 exit 0
 ```
 
-git commit -m "Ce message est beaucoup trop long et dépasse la limite autorisée de caractères pour un message de commit standard."
+- To test the config :
+```bash
+git commit --allow-empty -m "Ce message est beaucoup trop long et dépasse la limite autorisée de caractères pour un message de commit standard."
+```
+
+**SPOILER : DON'T WORK ! ❌**
